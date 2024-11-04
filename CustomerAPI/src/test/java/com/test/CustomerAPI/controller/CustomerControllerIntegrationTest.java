@@ -22,8 +22,8 @@ import java.util.List;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = CustomerApiApplication.class)
+@ActiveProfiles("test")
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "spring.profiles.active=test", classes = CustomerApiApplication.class)
 
 public class CustomerControllerIntegrationTest {
 
@@ -118,6 +118,10 @@ public class CustomerControllerIntegrationTest {
     }
 
 
+
+
+
+
     @Test
     void testDeleteCustomer() {
         Customer testCustomer = new Customer();
@@ -136,10 +140,7 @@ public class CustomerControllerIntegrationTest {
         assertEquals(204, response.getStatusCodeValue());
         assertFalse(customerRepository.existsById(customerId));
     }
+
+
+
 }
-
-
-
-
-
-
