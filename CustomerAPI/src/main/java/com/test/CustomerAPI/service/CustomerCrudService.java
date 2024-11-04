@@ -5,14 +5,19 @@ import com.test.CustomerAPI.exception.CustomerNotFoundException;
 import com.test.CustomerAPI.exception.DuplicateEmailException;
 import com.test.CustomerAPI.exception.InvalidCustomerDataException;
 import com.test.CustomerAPI.repository.CustomerRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class CustomerCrudService implements CustomerService {
-
+    private static final Logger logger = LoggerFactory.getLogger(CustomerCrudService.class);
     private final CustomerRepository customerRepository;
 
     @Autowired
@@ -27,6 +32,7 @@ public class CustomerCrudService implements CustomerService {
     public List<Customer> findAllCustomers() {
 
         List<Customer> allCustomers = customerRepository.findAll();
+        logger.info("Retrieved {} customers.", allCustomers.size());
         return allCustomers;
     }
 
@@ -37,9 +43,11 @@ public class CustomerCrudService implements CustomerService {
 
         Customer customerDetails =  customerRepository.findById(id)
                 .orElseThrow(() -> {
+                    logger.warn("Customer with id {} not found.", id);
                     return new CustomerNotFoundException("Customer with ID " + id + " does not exist");
                 });
 
+        logger.info("Customer with id {} found successfully.", id);
         return customerDetails;
     }
 
@@ -73,7 +81,7 @@ public class CustomerCrudService implements CustomerService {
             throw new InvalidCustomerDataException("Phone number is required");
         }
         Customer savedCustomer = customerRepository.save(customer);
-
+        logger.info("Customer added successfully with ID: {}", savedCustomer.getUuid());
         return savedCustomer;
     }
 
@@ -92,6 +100,7 @@ public class CustomerCrudService implements CustomerService {
         existingCustomer.setEmailAddress(customerDetails.getEmailAddress());
         existingCustomer.setPhoneNumber(customerDetails.getPhoneNumber());
         Customer updatedCustomer = customerRepository.save(existingCustomer);
+        logger.info("Customer updated successfully with ID: {}", updatedCustomer.getUuid());
         return updatedCustomer;
     }
 
@@ -104,6 +113,6 @@ public class CustomerCrudService implements CustomerService {
         }
 
         customerRepository.deleteById(id);
-
+        logger.info("Deleted customer with id {}", id);
     }
 }
