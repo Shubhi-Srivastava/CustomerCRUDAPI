@@ -1,0 +1,23 @@
+2024-11-03T22:36:16.023-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] c.t.CustomerAPI.CustomerApiApplication   : Starting CustomerApiApplication using Java 23.0.1 with PID 35016 (/Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI/target/classes started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:36:16.023-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] c.t.CustomerAPI.CustomerApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T22:36:16.075-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:36:16.078-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-11-03T22:36:16.114-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-03T22:36:16.115-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T22:36:16.115-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T22:36:16.119-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T22:36:16.120-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 96 ms
+2024-11-03T22:36:16.134-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:36:16.134-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:36:16.137-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:36:16.137-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-03T22:36:16.143-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3f21ac37
+2024-11-03T22:36:16.143-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-03T22:36:16.146-08:00  WARN 35016 --- [CustomerAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:36:16.160-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:36:16.172-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:36:16.199-08:00  WARN 35016 --- [CustomerAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:36:16.307-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T22:36:16.315-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-03T22:36:16.319-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] c.t.CustomerAPI.CustomerApiApplication   : Started CustomerApiApplication in 0.314 seconds (process running for 177.45)
+2024-11-03T22:36:16.320-08:00  INFO 35016 --- [CustomerAPI] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
