@@ -24,3 +24,200 @@
 2024-11-03T22:38:47.212-08:00  INFO 35016 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-03T22:38:47.212-08:00  INFO 35016 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
 2024-11-03T22:38:47.213-08:00  INFO 35016 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-03T22:50:11.236-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : Starting CustomerApiApplicationTests using Java 20.0.1 with PID 35742 (started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:50:11.237-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T22:50:11.450-08:00  INFO 35742 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:50:11.468-08:00  INFO 35742 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-11-03T22:50:11.627-08:00  INFO 35742 --- [CustomerAPI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:50:11.649-08:00  INFO 35742 --- [CustomerAPI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T22:50:11.659-08:00  INFO 35742 --- [CustomerAPI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:50:11.773-08:00  INFO 35742 --- [CustomerAPI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:50:11.787-08:00  INFO 35742 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T22:50:11.850-08:00  INFO 35742 --- [CustomerAPI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70d3cdbf
+2024-11-03T22:50:11.851-08:00  INFO 35742 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T22:50:11.863-08:00  WARN 35742 --- [CustomerAPI] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:50:12.145-08:00  INFO 35742 --- [CustomerAPI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:50:12.175-08:00  INFO 35742 --- [CustomerAPI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:12.323-08:00  WARN 35742 --- [CustomerAPI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:50:12.462-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : Started CustomerApiApplicationTests in 1.341 seconds (process running for 1.699)
+2024-11-03T22:50:12.566-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Received request to retrieve customer with ID: e921c7d4-6c29-4e52-80fa-a4c455c59d75
+2024-11-03T22:50:12.570-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Updating customer with ID: 081ba8e5-5d18-4d2b-ae35-3d07dd6a67e0
+2024-11-03T22:50:12.571-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Creating customer: com.test.CustomerAPI.Entity.Customer@1f596988
+2024-11-03T22:50:12.572-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Deleting customer with ID: b6a1bb7e-d272-4f05-aa59-0d2587ab8790
+2024-11-03T22:50:12.582-08:00  INFO 35742 --- [CustomerAPI] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-11-03T22:50:12.593-08:00  INFO 35742 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : Starting CustomerControllerIntegrationTest using Java 20.0.1 with PID 35742 (started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:50:12.594-08:00  INFO 35742 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : The following 1 profile is active: "test"
+2024-11-03T22:50:12.640-08:00  INFO 35742 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:50:12.643-08:00  INFO 35742 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-11-03T22:50:12.705-08:00  INFO 35742 --- [CustomerAPI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-11-03T22:50:12.710-08:00  INFO 35742 --- [CustomerAPI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T22:50:12.711-08:00  INFO 35742 --- [CustomerAPI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T22:50:12.728-08:00  INFO 35742 --- [CustomerAPI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T22:50:12.728-08:00  INFO 35742 --- [CustomerAPI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 134 ms
+2024-11-03T22:50:12.754-08:00  INFO 35742 --- [CustomerAPI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:50:12.755-08:00  INFO 35742 --- [CustomerAPI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:50:12.757-08:00  INFO 35742 --- [CustomerAPI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:50:12.758-08:00  INFO 35742 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-03T22:50:12.824-08:00  INFO 35742 --- [CustomerAPI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-03T22:50:12.825-08:00  INFO 35742 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-03T22:50:12.827-08:00  WARN 35742 --- [CustomerAPI] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.2.224 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-11-03T22:50:12.827-08:00  WARN 35742 --- [CustomerAPI] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:50:12.844-08:00  INFO 35742 --- [CustomerAPI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:50:12.856-08:00  INFO 35742 --- [CustomerAPI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:12.873-08:00  WARN 35742 --- [CustomerAPI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:50:12.931-08:00  INFO 35742 --- [CustomerAPI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50209 (http) with context path '/'
+2024-11-03T22:50:12.933-08:00  INFO 35742 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : Started CustomerControllerIntegrationTest in 0.352 seconds (process running for 2.171)
+2024-11-03T22:50:12.993-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T22:50:12.994-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T22:50:12.994-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-03T22:50:13.006-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-1] c.t.C.controller.CustomerController      : Received request to retrieve customer with ID: 9f651cae-b70f-4f65-b3ce-1837574dec76
+2024-11-03T22:50:13.019-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-1] c.t.C.service.CustomerCrudService        : Customer with id 9f651cae-b70f-4f65-b3ce-1837574dec76 found successfully.
+2024-11-03T22:50:13.075-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-2] c.t.C.controller.CustomerController      : Updating customer with ID: b4aafb2a-e6c1-4d15-9ed8-3a7b9ee0bdb0
+2024-11-03T22:50:13.079-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-2] c.t.C.service.CustomerCrudService        : Customer updated successfully with ID: b4aafb2a-e6c1-4d15-9ed8-3a7b9ee0bdb0
+2024-11-03T22:50:13.085-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-3] c.t.C.controller.CustomerController      : Creating customer: com.test.CustomerAPI.Entity.Customer@3070bcfe
+2024-11-03T22:50:13.093-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-3] c.t.C.service.CustomerCrudService        : Customer added successfully with ID: 6295f100-cb10-427e-8921-e5fcd5b4987b
+2024-11-03T22:50:13.100-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-4] c.t.C.controller.CustomerController      : Deleting customer with ID: ab6deb55-8b01-4d19-8974-f5cac99c866f
+2024-11-03T22:50:13.190-08:00  INFO 35742 --- [CustomerAPI] [http-nio-auto-1-exec-4] c.t.C.service.CustomerCrudService        : Deleted customer with id ab6deb55-8b01-4d19-8974-f5cac99c866f
+2024-11-03T22:50:13.221-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer added successfully with ID: 1f11b07d-8f4d-42d7-b8b5-a7e2826e5ef4
+2024-11-03T22:50:13.222-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer with id 9b3f77b5-6968-4993-9a6b-447f89237be7 found successfully.
+2024-11-03T22:50:13.223-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer updated successfully with ID: 75a2d125-b88e-4ca3-abcb-188e500c5fd4
+2024-11-03T22:50:13.225-08:00  WARN 35742 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer with id c08e585c-b9ed-4122-822a-9a2cee14297f not found.
+2024-11-03T22:50:13.226-08:00  INFO 35742 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Deleted customer with id 512941c3-5331-4b23-8efa-ac9d5ee844ff
+2024-11-03T22:50:13.233-08:00  INFO 35742 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:13.234-08:00  INFO 35742 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T22:50:13.236-08:00  INFO 35742 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T22:50:13.241-08:00  INFO 35742 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:13.241-08:00  INFO 35742 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-03T22:50:13.241-08:00  INFO 35742 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-03T22:50:25.770-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : Starting CustomerApiApplicationTests using Java 20.0.1 with PID 35784 (started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:50:25.771-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : The following 1 profile is active: "test"
+2024-11-03T22:50:25.973-08:00  INFO 35784 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:50:25.989-08:00  INFO 35784 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-11-03T22:50:26.131-08:00  INFO 35784 --- [CustomerAPI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:50:26.153-08:00  INFO 35784 --- [CustomerAPI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T22:50:26.164-08:00  INFO 35784 --- [CustomerAPI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:50:26.262-08:00  INFO 35784 --- [CustomerAPI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:50:26.278-08:00  INFO 35784 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T22:50:26.344-08:00  INFO 35784 --- [CustomerAPI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-03T22:50:26.345-08:00  INFO 35784 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T22:50:26.354-08:00  WARN 35784 --- [CustomerAPI] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.2.224 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-11-03T22:50:26.356-08:00  WARN 35784 --- [CustomerAPI] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:50:26.627-08:00  INFO 35784 --- [CustomerAPI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:50:26.648-08:00  INFO 35784 --- [CustomerAPI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:26.795-08:00  WARN 35784 --- [CustomerAPI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:50:26.938-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : Started CustomerApiApplicationTests in 1.276 seconds (process running for 1.606)
+2024-11-03T22:50:27.032-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Received request to retrieve customer with ID: 1aaf44fe-426a-4efc-aa31-12c48db983c9
+2024-11-03T22:50:27.036-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Updating customer with ID: 24556e56-938f-449a-85f2-7aceefe44bf7
+2024-11-03T22:50:27.037-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Creating customer: com.test.CustomerAPI.Entity.Customer@1644cc2d
+2024-11-03T22:50:27.038-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Deleting customer with ID: 6f69b476-523e-4254-ad0b-d0d7c2496356
+2024-11-03T22:50:27.048-08:00  INFO 35784 --- [CustomerAPI] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-11-03T22:50:27.058-08:00  INFO 35784 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : Starting CustomerControllerIntegrationTest using Java 20.0.1 with PID 35784 (started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:50:27.058-08:00  INFO 35784 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : The following 1 profile is active: "test"
+2024-11-03T22:50:27.104-08:00  INFO 35784 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:50:27.107-08:00  INFO 35784 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-11-03T22:50:27.176-08:00  INFO 35784 --- [CustomerAPI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-11-03T22:50:27.181-08:00  INFO 35784 --- [CustomerAPI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T22:50:27.182-08:00  INFO 35784 --- [CustomerAPI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T22:50:27.199-08:00  INFO 35784 --- [CustomerAPI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T22:50:27.199-08:00  INFO 35784 --- [CustomerAPI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2024-11-03T22:50:27.226-08:00  INFO 35784 --- [CustomerAPI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:50:27.227-08:00  INFO 35784 --- [CustomerAPI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:50:27.230-08:00  INFO 35784 --- [CustomerAPI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:50:27.231-08:00  INFO 35784 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-03T22:50:27.231-08:00  INFO 35784 --- [CustomerAPI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2024-11-03T22:50:27.231-08:00  INFO 35784 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-03T22:50:27.231-08:00  WARN 35784 --- [CustomerAPI] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.2.224 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-11-03T22:50:27.232-08:00  WARN 35784 --- [CustomerAPI] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:50:27.246-08:00  INFO 35784 --- [CustomerAPI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:50:27.247-08:00  INFO 35784 --- [CustomerAPI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:27.261-08:00  WARN 35784 --- [CustomerAPI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:50:27.317-08:00  INFO 35784 --- [CustomerAPI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50212 (http) with context path '/'
+2024-11-03T22:50:27.319-08:00  INFO 35784 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : Started CustomerControllerIntegrationTest in 0.271 seconds (process running for 1.986)
+2024-11-03T22:50:27.385-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T22:50:27.385-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T22:50:27.385-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-03T22:50:27.396-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-1] c.t.C.controller.CustomerController      : Received request to retrieve customer with ID: 34a18a3a-4952-415d-890d-fedc48bae015
+2024-11-03T22:50:27.408-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-1] c.t.C.service.CustomerCrudService        : Customer with id 34a18a3a-4952-415d-890d-fedc48bae015 found successfully.
+2024-11-03T22:50:27.459-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-2] c.t.C.controller.CustomerController      : Updating customer with ID: 809d8786-39d4-4e4e-8f43-2abf090aeadd
+2024-11-03T22:50:27.462-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-2] c.t.C.service.CustomerCrudService        : Customer updated successfully with ID: 809d8786-39d4-4e4e-8f43-2abf090aeadd
+2024-11-03T22:50:27.468-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-3] c.t.C.controller.CustomerController      : Creating customer: com.test.CustomerAPI.Entity.Customer@37bff66d
+2024-11-03T22:50:27.476-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-3] c.t.C.service.CustomerCrudService        : Customer added successfully with ID: 2643c48f-7cce-4dd6-b3dd-4e8a3180d664
+2024-11-03T22:50:27.482-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-4] c.t.C.controller.CustomerController      : Deleting customer with ID: 23dd73ba-c7f7-464a-9203-34b758ca29c2
+2024-11-03T22:50:27.566-08:00  INFO 35784 --- [CustomerAPI] [http-nio-auto-1-exec-4] c.t.C.service.CustomerCrudService        : Deleted customer with id 23dd73ba-c7f7-464a-9203-34b758ca29c2
+2024-11-03T22:50:27.594-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer added successfully with ID: 002db3d3-30a9-470e-be27-e13665a36499
+2024-11-03T22:50:27.595-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer with id 5fa3b41b-7bf2-406f-9f9e-d0166d4ebaaa found successfully.
+2024-11-03T22:50:27.597-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer updated successfully with ID: 8b74307f-3b29-4aa3-a134-bf1d977b4b7e
+2024-11-03T22:50:27.599-08:00  WARN 35784 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer with id 3281e34c-b010-4d53-b885-5c3465078088 not found.
+2024-11-03T22:50:27.600-08:00  INFO 35784 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Deleted customer with id 651d6d29-8c58-43a9-8a9f-b64745b2fe5a
+2024-11-03T22:50:27.607-08:00  INFO 35784 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:27.607-08:00  INFO 35784 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T22:50:27.608-08:00  INFO 35784 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T22:50:27.614-08:00  INFO 35784 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:27.614-08:00  INFO 35784 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-03T22:50:27.641-08:00  INFO 35784 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-03T22:50:43.390-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : Starting CustomerApiApplicationTests using Java 20.0.1 with PID 35817 (started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:50:43.391-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : The following 1 profile is active: "test"
+2024-11-03T22:50:43.610-08:00  INFO 35817 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:50:43.628-08:00  INFO 35817 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-11-03T22:50:43.784-08:00  INFO 35817 --- [CustomerAPI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:50:43.807-08:00  INFO 35817 --- [CustomerAPI] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-03T22:50:43.819-08:00  INFO 35817 --- [CustomerAPI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:50:43.925-08:00  INFO 35817 --- [CustomerAPI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:50:43.944-08:00  INFO 35817 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T22:50:44.019-08:00  INFO 35817 --- [CustomerAPI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-03T22:50:44.019-08:00  INFO 35817 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T22:50:44.029-08:00  WARN 35817 --- [CustomerAPI] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.2.224 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-11-03T22:50:44.031-08:00  WARN 35817 --- [CustomerAPI] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:50:44.317-08:00  INFO 35817 --- [CustomerAPI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:50:44.339-08:00  INFO 35817 --- [CustomerAPI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:44.494-08:00  WARN 35817 --- [CustomerAPI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:50:44.648-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.CustomerApiApplicationTests        : Started CustomerApiApplicationTests in 1.397 seconds (process running for 1.753)
+2024-11-03T22:50:44.745-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Received request to retrieve customer with ID: c7ae27dd-ce30-42b5-a4f4-726fa7584b80
+2024-11-03T22:50:44.749-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Updating customer with ID: 72b8b862-b27b-4cbb-8001-e7476303d6d7
+2024-11-03T22:50:44.750-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Creating customer: com.test.CustomerAPI.Entity.Customer@cda988
+2024-11-03T22:50:44.752-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.controller.CustomerController      : Deleting customer with ID: bc238b62-727e-48b5-924b-d92880396883
+2024-11-03T22:50:44.762-08:00  INFO 35817 --- [CustomerAPI] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-11-03T22:50:44.773-08:00  INFO 35817 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : Starting CustomerControllerIntegrationTest using Java 20.0.1 with PID 35817 (started by shubhisrivastava in /Users/shubhisrivastava/Desktop/CustomerCRUDAPI/CustomerAPI)
+2024-11-03T22:50:44.773-08:00  INFO 35817 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : The following 1 profile is active: "test"
+2024-11-03T22:50:44.827-08:00  INFO 35817 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T22:50:44.830-08:00  INFO 35817 --- [CustomerAPI] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-11-03T22:50:44.894-08:00  INFO 35817 --- [CustomerAPI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-11-03T22:50:44.899-08:00  INFO 35817 --- [CustomerAPI] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T22:50:44.899-08:00  INFO 35817 --- [CustomerAPI] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T22:50:44.917-08:00  INFO 35817 --- [CustomerAPI] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T22:50:44.917-08:00  INFO 35817 --- [CustomerAPI] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2024-11-03T22:50:44.944-08:00  INFO 35817 --- [CustomerAPI] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-03T22:50:44.945-08:00  INFO 35817 --- [CustomerAPI] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-03T22:50:44.949-08:00  INFO 35817 --- [CustomerAPI] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T22:50:44.949-08:00  INFO 35817 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-03T22:50:44.949-08:00  INFO 35817 --- [CustomerAPI] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2024-11-03T22:50:44.949-08:00  INFO 35817 --- [CustomerAPI] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-03T22:50:44.950-08:00  WARN 35817 --- [CustomerAPI] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.2.224 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-11-03T22:50:44.950-08:00  WARN 35817 --- [CustomerAPI] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-03T22:50:44.969-08:00  INFO 35817 --- [CustomerAPI] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-03T22:50:44.970-08:00  INFO 35817 --- [CustomerAPI] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:44.986-08:00  WARN 35817 --- [CustomerAPI] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T22:50:45.042-08:00  INFO 35817 --- [CustomerAPI] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50215 (http) with context path '/'
+2024-11-03T22:50:45.044-08:00  INFO 35817 --- [CustomerAPI] [main] .t.C.c.CustomerControllerIntegrationTest : Started CustomerControllerIntegrationTest in 0.282 seconds (process running for 2.149)
+2024-11-03T22:50:45.110-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T22:50:45.110-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T22:50:45.110-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-03T22:50:45.122-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-1] c.t.C.controller.CustomerController      : Received request to retrieve customer with ID: ee25f86f-cb24-438a-8fc4-ce2cbe4f3267
+2024-11-03T22:50:45.135-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-1] c.t.C.service.CustomerCrudService        : Customer with id ee25f86f-cb24-438a-8fc4-ce2cbe4f3267 found successfully.
+2024-11-03T22:50:45.187-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-2] c.t.C.controller.CustomerController      : Updating customer with ID: 7b95d593-55dc-4c54-a159-d548251f49f1
+2024-11-03T22:50:45.191-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-2] c.t.C.service.CustomerCrudService        : Customer updated successfully with ID: 7b95d593-55dc-4c54-a159-d548251f49f1
+2024-11-03T22:50:45.197-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-3] c.t.C.controller.CustomerController      : Creating customer: com.test.CustomerAPI.Entity.Customer@52693012
+2024-11-03T22:50:45.204-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-3] c.t.C.service.CustomerCrudService        : Customer added successfully with ID: 41d23d7c-bf2f-4e0f-a4d6-8caffdb6884d
+2024-11-03T22:50:45.211-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-4] c.t.C.controller.CustomerController      : Deleting customer with ID: 179869ca-53ca-4d1c-8803-d9ba1a11da62
+2024-11-03T22:50:45.300-08:00  INFO 35817 --- [CustomerAPI] [http-nio-auto-1-exec-4] c.t.C.service.CustomerCrudService        : Deleted customer with id 179869ca-53ca-4d1c-8803-d9ba1a11da62
+2024-11-03T22:50:45.333-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer added successfully with ID: cb0362e4-4a01-48b6-becf-42ed1b41acba
+2024-11-03T22:50:45.334-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer with id 57f21f7e-67a4-4714-98b1-6a82f3598394 found successfully.
+2024-11-03T22:50:45.336-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer updated successfully with ID: fe1e5d43-d739-48b1-a167-480c807078cb
+2024-11-03T22:50:45.339-08:00  WARN 35817 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Customer with id 2c3baafa-63ff-4bf0-b45e-c63a4085bf01 not found.
+2024-11-03T22:50:45.339-08:00  INFO 35817 --- [CustomerAPI] [main] c.t.C.service.CustomerCrudService        : Deleted customer with id aaa1b53d-39a1-4c40-946c-7b6ebd7b20f7
+2024-11-03T22:50:45.347-08:00  INFO 35817 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:45.348-08:00  INFO 35817 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T22:50:45.349-08:00  INFO 35817 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T22:50:45.354-08:00  INFO 35817 --- [CustomerAPI] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T22:50:45.355-08:00  INFO 35817 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-03T22:50:45.363-08:00  INFO 35817 --- [CustomerAPI] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
