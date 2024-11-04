@@ -1,0 +1,4 @@
+com/test/CustomerAPI/CustomerApiApplicationTests.class
+com/test/CustomerAPI/controller/CustomerControllerIntegrationTest.class
+com/test/CustomerAPI/service/CustomerCrudServiceTest.class
+com/test/CustomerAPI/controller/CustomerControllerTest.class
