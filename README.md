@@ -84,7 +84,7 @@ CustomerTestAPIClient provides a simple CLI to interact with the CustomerAPI. Fo
     a) Navigate to the CustomerTestAPIClient Directory:
    ```
      cd ..
-     cd cd CustomerTestAPIClient
+     cd CustomerTestAPIClient
    ```
    
    
