@@ -116,6 +116,26 @@ public class CustomerControllerIntegrationTest {
         assertNotNull(response.getBody());
         assertEquals("JaneUpdated", response.getBody().getFirstName());
     }
+
+
+    @Test
+    void testDeleteCustomer() {
+        Customer testCustomer = new Customer();
+        testCustomer.setFirstName("Mark");
+        testCustomer.setLastName("Smith");
+        testCustomer.setEmailAddress("mark.smith@example.com");
+        testCustomer.setPhoneNumber("5566778899");
+        customerRepository.save(testCustomer);
+
+
+        Customer savedCustomer = customerRepository.save(testCustomer);
+        UUID customerId = savedCustomer.getUuid();
+
+        ResponseEntity<Void> response = restTemplate.exchange(createURLWithPort("/" + customerId), HttpMethod.DELETE, null, Void.class);
+
+        assertEquals(204, response.getStatusCodeValue());
+        assertFalse(customerRepository.existsById(customerId));
+    }
 }
 
 
